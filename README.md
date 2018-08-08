@@ -17,7 +17,7 @@ cp ~/.vimrc ~/.backup_vimrc
 *Clone the vim file from this repository and replace it*
 ```
 mkdir -p ~/workspace/vimrc
-git clone https://github.com/costinbusioc/vimrc ~/workspace/vimrc
+git clone git@github.com:costinbusioc/vimrc.git ~/workspace/vimrc
 
 mv ~/workspace/virmc/.vimrc ~/.vimrc
 ```
