@@ -11,8 +11,13 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'vim-airline/vim-airline'
+Plugin 'klen/python-mode'
+
+" virtualenv support
+Plugin 'jmcantrell/vim-virtualenv'
 
 
+Plugin 'Valloric/YouCompleteMe'
 " All of your Plugins must be added before the following line
 
 "Navigate around files in folder
@@ -91,9 +96,6 @@ set showmatch           "Highlight matching braces
 " Always show the status line
 set laststatus=2
 
-" Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ Column:\ %c
-
 " Open new vertical splits to the right of current one.
 set splitright
 
@@ -114,3 +116,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 """""""""
 
 let g:ctrlp_working_path_mode = 'ra'
+
+"""""""""""""""
+" python-mode "
+"""""""""""""""
+let g:pymode_python = 'python3'
+
