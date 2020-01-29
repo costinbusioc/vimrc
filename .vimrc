@@ -51,19 +51,6 @@ set tabstop=4	    	"Indent using 4 spaces
 set softtabstop=4
 set shiftwidth=4
 
-" Set tabs and their width for kernel development
-if (system('pwd | grep "/home/costinbusioc/Facultate/Anul3/Sem2/SO"') != "")
-    "echom "Working on kernel stuff"
-    set noexpandtab
-    set shiftwidth=8
-    set tabstop=8
-else
-    "echom "Not working on kernel stuff"
-    set expandtab
-    set shiftwidth=4
-    set tabstop=4
-endif
-
 set ignorecase  		"Ignore case when searching
 set hlsearch    		"Enable search highlighting
 set incsearch   		"Incremental search that shows partial matches
